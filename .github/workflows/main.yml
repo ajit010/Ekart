@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ajit-ekart
 
     steps:
     - name: Checkout code
@@ -29,7 +29,5 @@ jobs:
         python -m pytest
 
     - name: Deploy
-      if: success()
-      run: |
-        # Add your deployment script or commands here
+      
 
